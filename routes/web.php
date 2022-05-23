@@ -1,6 +1,12 @@
 <?php
 
+use App\Http\Controllers\ProductoComtroller;
+use App\Models\Producto;
 use Illuminate\Support\Facades\Route;
+
+//dependencia al controlador
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +27,6 @@ Route::get('/', function () {
 Route::get('prueba' , function(){
    return view('productos.new');
 });
+
+//Rutas REST
+Route::resource('productos', ProductoComtroller::class);
