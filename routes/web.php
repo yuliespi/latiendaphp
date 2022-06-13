@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProductoComtroller;
+use App\Http\Controllers\ProductoController;
 use App\Models\Producto;
 use Illuminate\Support\Facades\Route;
 
@@ -29,4 +29,4 @@ Route::get('prueba' , function(){
 });
 
 //Rutas REST
-Route::resource('productos', ProductoComtroller::class);
+Route::resource('productos', ProductoController::class);
